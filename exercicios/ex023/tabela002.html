@@ -12,9 +12,23 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
         td,th{
             border: 1px solid black;
             padding: 5px;
+        }
+        tbody> tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+            background-color: lightgrey;
         }
         thead,tfoot{
             background-color: gray;
@@ -25,10 +39,11 @@
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>População dos estados no Brasil</caption>
         <thead>
            <tr>
             <th>Estado</th>
-            <th>População</th>
+            <th style="width: 50px;">População</th>
            </tr>
 
         </thead>
