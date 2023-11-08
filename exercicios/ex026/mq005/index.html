@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer"  class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando marcando midia queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis nemo itaque iste atque et, eaque doloremque mollitia dignissimos, perferendis nisi perspiciatis cumque eos numquam quibusdam, aspernatur explicabo autem fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa dignissimos voluptas quod officia magnam sunt culpa nemo quaerat aut illum, sequi est quisquam hic. Illum quam maiores et explicabo!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, officiis laboriosam! Placeat incidunt deserunt voluptatibus eveniet magnam sit eum iure odit, aspernatur exercitationem dolor officiis animi asperiores quia quos? Recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla et dolore modi minus vero fuga aut qui facere fugit, pariatur vitae quisquam dicta ducimus quae sequi adipisci voluptatibus libero dolor.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate modi officiis debitis ratione a tempore nihil quia rerum magnam quod doloribus id, quos quidem provident quam quibusdam repudiandae fuga iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat rerum aspernatur, atque nemo hic vero aliquam nobis dolores quam fugiat ad dignissimos officia laboriosam velit iste perferendis veniam recusandae.</p>
+        </article>
+
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
